@@ -1,0 +1,26 @@
+# Routes
+
+# Map static resources from the /public folder to the /assets URL path
+GET        /assets/*file         controllers.Assets.versioned(path="/public", file: Asset)
+
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+GET        /blank                controllers.AdminController.blank
+GET        /buttons              controllers.AdminController.buttons
+GET        /flot                 controllers.AdminController.flot
+GET        /forms                controllers.AdminController.forms
+GET        /grid                 controllers.AdminController.grid
+GET        /icons                controllers.AdminController.icons
+GET        /                     controllers.AdminController.index
+GET        /login                controllers.AdminController.login
+GET        /morris               controllers.AdminController.morris
+GET        /notifications        controllers.AdminController.notifications
+GET        /panels_wells         controllers.AdminController.panels_wells
+GET        /tables               controllers.AdminController.tables
+GET        /typography           controllers.AdminController.typography
+
+
+
+
+
+
