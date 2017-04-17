@@ -1,0 +1,31 @@
+@(vdto: String)(htmlContent: Html)(implicit mi18n: Messages, flash: Flash, req: RequestHeader, lang: Lang)
+
+@views.html.admin.components.main("",
+    Seq(),
+    Seq(),
+    HtmlFormat.raw("")) {
+
+
+    <div id="wrapper">
+
+        @views.html.admin.components.nav("")
+
+        <div id="page-wrapper">
+
+            @views.html.admin.components.heading_breadcrumbs("")
+
+            @views.html.admin.components.flash_message("")
+
+            @views.html.admin.components.lang("")
+
+            <hr>
+
+            @htmlContent
+
+        </div>
+
+    </div>
+
+    @views.html.admin.components.footer("")
+
+}

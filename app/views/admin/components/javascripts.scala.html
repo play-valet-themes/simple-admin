@@ -1,4 +1,5 @@
 @(scripts: Seq[String])
+
 @scripts.map { script =>
     <script type="text/javascript" src="@routes.Assets.versioned(script)"></script>
 }

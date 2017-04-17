@@ -1,4 +1,5 @@
 @(styles: Seq[String])
+
 @styles.map { style =>
     <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned(style)">
 }

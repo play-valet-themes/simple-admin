@@ -1,4 +1,4 @@
-@(str: String)(implicit mesg: Messages, req: RequestHeader, lang: Lang)
+@(str:String)(implicit mi18n: Messages, flash: Flash, req: RequestHeader, lang: Lang)
 
 <ul class="nav navbar-top-links navbar-right">
     <li class="dropdown">
@@ -201,7 +201,7 @@
             <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
             </li>
             <li class="divider"></li>
-            <li><a href="@routes.AdminController.index()"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+            <li><a href=""><i class="fa fa-sign-out fa-fw"></i> Logout</a>
             </li>
         </ul>
             <!-- /.dropdown-user -->

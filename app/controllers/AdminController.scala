@@ -13,7 +13,7 @@ class AdminController @Inject()(
   extends Controller with I18nSupport {
 
   def index = Action { implicit request =>
-    Ok(views.html.admin.blank("Your new application is ready."))
+    Ok(views.html.admin.posts.list("Your new application is ready."))
   }
 
 }

@@ -1,4 +1,4 @@
-@(str: String)(implicit mesg: Messages, req: RequestHeader, lang: Lang)
+@(str:String)(implicit mi18n: Messages, flash: Flash, req: RequestHeader, lang: Lang)
 
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
@@ -9,7 +9,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="@routes.AdminController.index()">SB Admin v2.0</a>
+        <a class="navbar-brand" href="">SB Admin v2.0</a>
     </div>
         <!-- /.navbar-header -->
 
@@ -27,14 +27,11 @@
                             </button>
                         </span>
                     </div>
+                        <!-- /input-group -->
                 </li>
-
-
                 <li>
-                    <a href="@routes.AdminController.index()"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                    <a href=""><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                 </li>
-
-
             </ul>
         </div>
             <!-- /.sidebar-collapse -->
