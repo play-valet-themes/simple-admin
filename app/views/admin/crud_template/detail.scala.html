@@ -2,29 +2,25 @@
 
 @views.html.admin.crud_template.frame_basic(vdto) {
 
+    <!-- detail -->
     <div class="row">
         <div class="col-md-12">
 
-            <!-- TEMPLATE_FIELD_AREA -->
-            <div class="form-horizontal">
+            <div class="form-horizontal SCAFFOLD_ITERATOR">
                 <div class="control-group form-group">
-                    <label class="control-label col-xs-2">label</label>
+                    <label class="control-label col-xs-2">SCAFFOLD_FIELD</label>
                     <div class="col-xs-10">
-                        <p>param</p>
+                        <p>SCAFFOLD_VALUE</p>
                     </div>
                 </div>
             </div>
-            <!-- TEMPLATE_FIELD_AREA -->
-
-            <!-- TEMPLATE_BUTTON_AREA -->
             <div class="form-group">
                 <div class="col-xs-offset-2 col-xs-10">
-                    <a class="btn btn-warning" href="">edit</a>
-                    <a class="btn btn-default" href="">cancel</a>
-                    <a class="btn btn-danger" href="">delete</a>
+                    <a class="btn btn-warning SCAFFOLD_BTN_SHOW_EDIT" href="">to edit</a>
+                    <a class="btn btn-default SCAFFOLD_BTN_CANCEL" href="">cancel</a>
+                    <a class="btn btn-danger SCAFFOLD_BTN_SUBMIT_DELETE" href="">delete</a>
                 </div>
             </div>
-            <!-- TEMPLATE_BUTTON_AREA -->
 
         </div>
     </div>

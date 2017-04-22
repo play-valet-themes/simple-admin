@@ -1,0 +1,27 @@
+@(vdto: String)(implicit mi18n: Messages, flash: Flash, req: RequestHeader, lang: Lang)
+
+@views.html.admin.crud_template.frame_basic(vdto) {
+
+    <!-- store -->
+    <div class="row">
+        <div class="col-md-12">
+
+            <form class="form-horizontal">
+                <div class="control-group form-group SCAFFOLD_ITERATOR">
+                    <label class="control-label col-xs-2">SCAFFOLD_FIELD</label>
+                    <div class="col-xs-10">
+                        <input type="text" class="form-control" name="" value="SCAFFOLD_VALUE">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-offset-2 col-xs-10">
+                        <a class="btn btn-primary SCAFFOLD_BTN_SUBMIT_CREATE" href="">create</a>
+                        <a class="btn btn-default SCAFFOLD_BTN_CANCEL" href="">cancel</a>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+}
