@@ -1,4 +1,4 @@
-@(vdto: String)(htmlContent: Html)(implicit mi18n: Messages, flash: Flash, req: RequestHeader, lang: Lang)
+@()(htmlContent: Html)
 
 @views.html.admin.components.main("",
     Seq(),
@@ -8,24 +8,24 @@
 
     <div id="wrapper">
 
-        @views.html.admin.components.nav("")
+        @views.html.admin.components.nav()
 
         <div id="page-wrapper">
 
-            @views.html.admin.components.heading_breadcrumbs("")
+            @views.html.admin.components.heading_breadcrumbs()
 
-            @views.html.admin.components.flash_message("")
+            @views.html.admin.components.flashmsg()
 
-            @views.html.admin.components.lang("")
+            @views.html.admin.components.lang()
 
             <hr>
 
-            @htmlContent
+            <span class="SCAFFOLD_HTML_CONTENT"></span>
 
         </div>
 
     </div>
 
-    @views.html.admin.components.footer("")
+    @views.html.admin.components.footer()
 
 }

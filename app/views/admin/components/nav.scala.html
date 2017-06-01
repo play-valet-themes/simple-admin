@@ -1,4 +1,4 @@
-@(str:String)(implicit mi18n: Messages, flash: Flash, req: RequestHeader, lang: Lang)
+@()
 
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
@@ -13,7 +13,7 @@
     </div>
         <!-- /.navbar-header -->
 
-    @views.html.admin.components.nav_header("")
+    @views.html.admin.components.nav_header()
 
     <div class="navbar-default sidebar" role="navigation">
         <div class="sidebar-nav navbar-collapse">
