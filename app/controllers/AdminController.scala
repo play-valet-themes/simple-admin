@@ -2,8 +2,6 @@ package controllers
 
 import javax.inject._
 
-import play.api.data.Form
-import play.api.data.Forms._
 import play.api.i18n.{I18nSupport, MessagesApi}
 import play.api.mvc._
 
