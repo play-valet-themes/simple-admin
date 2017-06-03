@@ -1,4 +1,4 @@
-# tst-simple-admin
+# simple-admin
 
 #### trigger
 
