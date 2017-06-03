@@ -16,7 +16,7 @@ class AdminController @Inject()(val messagesApi: MessagesApi)(implicit executor:
   }
 
   def showCreate = Action { implicit request =>
-    Ok(views.html.admin.crud_template.store())
+    Ok(views.html.admin.crud_template.create())
   }
 
   def showEdit = Action { implicit request =>
