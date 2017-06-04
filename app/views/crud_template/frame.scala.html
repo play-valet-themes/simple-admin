@@ -1,0 +1,31 @@
+@()(htmlContent: Html)
+
+@views.html.components.main("",
+    Seq(),
+    Seq(),
+    HtmlFormat.raw("")) {
+
+
+    <div id="wrapper">
+
+        @views.html.components.nav()
+
+        <div id="page-wrapper">
+
+            @views.html.components.heading_breadcrumbs()
+
+            @views.html.components.flash_message()
+
+            @views.html.components.lang()
+
+            <hr>
+
+            @htmlContent
+
+        </div>
+
+    </div>
+
+    @views.html.components.footer()
+
+}

@@ -12,18 +12,18 @@ class AdminController @Inject()(val messagesApi: MessagesApi)(implicit executor:
   extends Controller with I18nSupport {
 
   def index = Action { implicit request =>
-    Ok(views.html.admin.crud_template.list())
+    Ok(views.html.crud_template.list())
   }
 
   def showCreate = Action { implicit request =>
-    Ok(views.html.admin.crud_template.create())
+    Ok(views.html.crud_template.create())
   }
 
   def showEdit = Action { implicit request =>
-    Ok(views.html.admin.crud_template.edit())
+    Ok(views.html.crud_template.edit())
   }
 
   def showDetail = Action { implicit request =>
-    Ok(views.html.admin.crud_template.detail())
+    Ok(views.html.crud_template.detail())
   }
 }
