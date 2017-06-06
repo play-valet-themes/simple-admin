@@ -2,7 +2,7 @@
 lazy val root = (project in file("."))
   .enablePlugins(PlayScala)
   .settings(
-    name := "tct-admin",
+    name := "simple-admin",
     version := "0.0.1",
     scalaVersion := "2.11.8",
     CoffeeScriptKeys.sourceMap := false,
